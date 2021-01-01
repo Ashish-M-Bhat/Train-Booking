@@ -1,0 +1,63 @@
+
+<!DOCTYPE html> 
+<html> 
+      
+<head> 
+    <style>
+    body
+    {
+        background: url(background.jpg);
+        
+        background-size:cover;
+        
+        
+    }
+    </style>
+    <title> 
+    </title> 
+     <link rel="stylesheet" href="style.css"/>
+    <link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css' rel='stylesheet'> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" ></script> 
+    <script type="text/javascript" src="takeInput.js"></script>
+
+</head> 
+  
+<body> 
+
+<div class="container">
+	<div class="main">
+		<form class="form" method="post" action="#">
+			<h2>Choose</h2>
+			<label>Boarding :</label>
+			<input type="text" id="board">
+			<label>Desination :</label>
+			<input type="text"  id="dest">
+			<label>Date :</label>
+			<input type="text" id="my_date_picker"> 
+			<input type="button" id="searchTrains" value="Search">
+		</form>
+	</div>
+</div>
+
+
+    
+    <script> 
+        $(document).ready(function() { 
+          
+            $(function() { 
+                $( "#my_date_picker" ).datepicker(); 
+            }); 
+
+        })
+
+$(function() { 
+    $( "#my_date_picker" ).datepicker({ 
+        dateFormat: 'yy-mm-dd'
+        
+    }); 
+}); 
+    </script> 
+</body> 
+  
+</html> 
